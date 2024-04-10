@@ -1,0 +1,37 @@
+
+def encode(s):
+    r = ""
+    for n in s:
+        n = int(n)
+        n += 3
+        if n == 12:
+            r.append(2)
+        elif n == 11:
+            r.append(1)
+        elif n == 10:
+            r.append(0)
+        else:
+            r.append(n)
+    return r
+
+
+if __name__ == '__main__':
+    print("Menu\n"
+          "-------------\n"
+          "1. Encode\n"
+          "2. Decode\n"
+          "3. Quit\n")
+
+    opt = input("Please enter an option:")
+    if opt == 1:
+        p = input("Please enter your password to encode:")
+    encode(p)
+    print("Your password has been encoded and stored!")
+    elif opt == 2:
+        print(f"The encoded password is {p}, and the original password is {o}.")
+    elif opt == 3:
+        quit()
+    else:
+        pass
+
+
