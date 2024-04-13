@@ -1,4 +1,4 @@
-#Gianna    
+  
    def decode(s):           
     r = ""               
     for n in s:          
