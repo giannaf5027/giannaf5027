@@ -13,6 +13,7 @@ def encode(s):
         else:
             r.append(n)
     return r
+    
 def decode(s):
     r = ""
     for n in s:
