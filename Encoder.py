@@ -1,20 +1,4 @@
   
-   def decode(s):           
-    r = ""               
-    for n in s:          
-        n = int(n)       
-        n -= 3           
-        if n == -3:      
-            r += "0"     
-        elif n == -2:    
-            r += "9"     
-        elif n == -1:    
-            r += "8"     
-        else:            
-            r += str(n)  
-        return r       
-
-
 def encode(s):
     r = ""
     for n in s:
@@ -29,6 +13,24 @@ def encode(s):
         else:
             r += str(n)
     return r
+
+
+  
+   def decode(s):           
+    r = ""               
+    for n in s:          
+        n = int(n)       
+        n -= 3           
+        if n == -3:      
+            r += "0"     
+        elif n == -2:    
+            r += "9"     
+        elif n == -1:    
+            r += "8"     
+        else:            
+            r += str(n)  
+        return r     
+      
 
 if __name__ == '__main__':
     e = ""
